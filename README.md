@@ -103,3 +103,101 @@ Final Output
 Name: Prakash Raj D  
 GitHub: https://github.com/Prakashraj-D  
 LinkedIn: https://www.linkedin.com/in/prakashrajd-securityengineer
+
+SOC Analyst Project: Full Command Reference
+
+
+---
+
+Phase 1: Set Up Logging & Tools
+
+sudo apt update
+sudo apt install auditd logwatch mailutils -y
+sudo systemctl enable auditd
+sudo systemctl start auditd
+
+
+---
+
+Phase 2: Monitor Critical File /etc/passwd
+
+Audit Rule (Basic):
+
+sudo auditctl -w /etc/passwd -p wa -k passwd_monitor
+
+Audit Rule (Advanced):
+
+sudo auditctl -a always,exit -F arch=b64 -F path=/etc/passwd -F perm=wa -F auid>=1000 -F auid!=4294967295 -k passwd_monitor
+
+Trigger the rule:
+
+sudo nano /etc/passwd
+
+View the log:
+
+sudo ausearch -k passwd_monitor
+
+Save the report:
+
+sudo ausearch -k passwd_monitor > passwd_audit_report.txt
+
+Add header & timestamp:
+
+echo "==== Phase 2: /etc/passwd Audit Report ====" | cat - passwd_audit_report.txt > temp && mv temp passwd_audit_report.txt
+echo "Report Generated on: $(date)" | cat - passwd_audit_report.txt > temp && mv temp passwd_audit_report.txt
+
+
+---
+
+Phase 3: Analyze Authentication Logs
+
+sudo journalctl _COMM=sshd | grep "Failed password"
+sudo journalctl _COMM=sshd | grep "Accepted password"
+
+Save auth logs report:
+
+sudo journalctl _COMM=sshd > auth_logs_report.txt
+
+Add header & timestamp:
+
+echo "==== Phase 3: Authentication Log Analysis Report ====" | cat - auth_logs_report.txt > temp && mv temp auth_logs_report.txt
+echo "Report Generated on: $(date)" | cat - auth_logs_report.txt > temp && mv temp auth_logs_report.txt
+
+
+---
+
+Phase 4: Custom Rule Creation + Threat Detection
+
+1. Detect Modification of /etc/shadow
+
+sudo auditctl -a always,exit -F arch=b64 -F path=/etc/shadow -F perm=wa -F auid>=1000 -F auid!=4294967295 -k shadow_monitor
+
+View logs:
+
+sudo ausearch -k shadow_monitor
+
+2. Detect Execution of Netcat (nc)
+
+sudo auditctl -a always,exit -F arch=b64 -F path=/bin/nc -F perm=x -F auid>=1000 -F auid!=4294967295 -k detect_nc
+
+View logs:
+
+sudo ausearch -k detect_nc
+
+
+---
+
+Phase 5: Automated Reporting with Logwatch
+
+View Sample Logwatch Report:
+
+sudo logwatch --detail High --service All --range today --format text
+
+Save the report:
+
+sudo logwatch --detail High --service All --range today --format text > logwatch_today_report.txt
+
+Add header & timestamp:
+
+echo "==== Phase 5: Daily Logwatch Report ====" | cat - logwatch_today_report.txt > temp && mv temp logwatch_today_report.txt
+echo "Report Generated on: $(date)" | cat - logwatch_today_report.txt > temp && mv temp logwatch_today_report.txt
