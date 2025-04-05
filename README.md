@@ -78,7 +78,7 @@ Phase 5: Daily Report Automation
 - Created cron job (optional):
   bash
   crontab -e
-  # Added line for daily report:
+  Added line for daily report:
   0 6 * * * /usr/sbin/logwatch --output mail --mailto you@example.com --format html
   
 ---
