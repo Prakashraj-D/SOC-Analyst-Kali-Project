@@ -1,0 +1,10 @@
+Report Generated on: Sat Apr  5 11:48:02 IST 2025
+==== Phase 4: Custom Threat Detection (Netcat Execution) ====
+----
+time->Sat Apr  5 11:43:23 2025
+type=PROCTITLE msg=audit(1743833603.135:631): proctitle=617564697463746C002D6100616C776179732C65786974002D46006172636800623634002D460070617468002F7573722F62696E2F6E63002D46007065726D0078002D460061756964000031303030002D460061756964000034323934393637323935002D6B006465746563745F6E6574636174
+type=PATH msg=audit(1743833603.135:631): item=0 name="/usr/bin/" inode=13894069 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743833603.135:631): cwd="/home/prakashraj"
+type=SOCKADDR msg=audit(1743833603.135:631): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743833603.135:631): arch=c000003e syscall=44 success=yes exit=1080 a0=4 a1=7ffd0a3e1090 a2=438 a3=0 items=1 ppid=12229 pid=12230 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743833603.135:631): auid=1000 ses=3 subj=unconfined op=add_rule key="detect_netcat" list=4 res=1

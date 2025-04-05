@@ -1,0 +1,29 @@
+Report Generated on: Sat Apr  5 11:34:14 IST 2025
+==== Phase 4: Custom Threat Detection (Nmap Execution) ====
+----
+time->Sat Apr  5 11:31:23 2025
+type=PROCTITLE msg=audit(1743832883.413:548): proctitle=617564697463746C002D6100616C776179732C65786974002D460070617468002F7573722F62696E2F6E6D6170002D46007065726D0078002D460061756964000031303030002D460061756964000034323934393637323935002D6B006465746563745F6E6D6170
+type=PATH msg=audit(1743832883.413:548): item=0 name="/usr/bin/" inode=13894069 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743832883.413:548): cwd="/home/prakashraj"
+type=SOCKADDR msg=audit(1743832883.413:548): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743832883.413:548): arch=c000003e syscall=44 success=yes exit=1080 a0=4 a1=7ffc99450a60 a2=438 a3=0 items=1 ppid=11523 pid=11524 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743832883.413:548): auid=1000 ses=3 subj=unconfined op=add_rule key="detect_nmap" list=4 res=1
+----
+time->Sat Apr  5 11:32:10 2025
+type=PROCTITLE msg=audit(1743832930.858:555): proctitle=617564697463746C002D6100616C776179732C65786974002D46006172636800623634002D460070617468002F7573722F62696E2F6E6D6170002D46007065726D0078002D460061756964000031303030002D460061756964000034323934393637323935002D6B006465746563745F6E6D6170
+type=PATH msg=audit(1743832930.858:555): item=0 name="/usr/bin/" inode=13894069 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743832930.858:555): cwd="/home/prakashraj"
+type=SOCKADDR msg=audit(1743832930.858:555): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743832930.858:555): arch=c000003e syscall=44 success=yes exit=1080 a0=4 a1=7ffcc5dcb4e0 a2=438 a3=0 items=1 ppid=11560 pid=11561 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743832930.858:555): auid=1000 ses=3 subj=unconfined op=add_rule key="detect_nmap" list=4 res=1
+----
+time->Sat Apr  5 11:33:01 2025
+type=PROCTITLE msg=audit(1743832981.948:562): proctitle=2F7573722F62696E2F656E76007368002F7573722F62696E2F6E6D6170003132372E302E302E31
+type=PATH msg=audit(1743832981.948:562): item=3 name="/lib64/ld-linux-x86-64.so.2" inode=13901766 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1743832981.948:562): item=2 name="/usr/bin/env" inode=13894921 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1743832981.948:562): item=1 name="/usr/bin/nmap" inode=13910324 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1743832981.948:562): item=0 name="/usr/bin/nmap" inode=13910324 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743832981.948:562): cwd="/home/prakashraj"
+type=EXECVE msg=audit(1743832981.948:562): argc=4 a0="/usr/bin/env" a1="sh" a2="/usr/bin/nmap" a3="127.0.0.1"
+type=SYSCALL msg=audit(1743832981.948:562): arch=c000003e syscall=59 success=yes exit=0 a0=56483460e128 a1=56483461ec50 a2=564834634140 a3=0 items=4 ppid=11597 pid=11598 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nmap" exe="/usr/bin/env" subj=unconfined key="detect_nmap"
+

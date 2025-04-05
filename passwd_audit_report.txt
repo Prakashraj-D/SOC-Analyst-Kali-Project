@@ -1,0 +1,859 @@
+Report Generated on: Sat Apr  5 11:24:00 IST 2025
+==== Phase 2: Sensitive File Monitoring Report (/etc/passwd) ====
+----
+time->Sat Apr  5 10:16:16 2025
+type=PROCTITLE msg=audit(1743828376.596:29): proctitle=617564697463746C002D6100616C776179732C65786974002D460070617468002F6574632F706173737764002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828376.596:29): item=0 name="/etc/" inode=8912897 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828376.596:29): cwd="/home/prakashraj"
+type=SOCKADDR msg=audit(1743828376.596:29): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743828376.596:29): arch=c000003e syscall=44 success=yes exit=1084 a0=4 a1=7ffe132e6640 a2=43c a3=0 items=1 ppid=8245 pid=8246 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743828376.596:29): auid=1000 ses=3 subj=unconfined op=add_rule key="passwd_monitor" list=4 res=1
+----
+time->Sat Apr  5 10:17:01 2025
+type=PROCTITLE msg=audit(1743828421.468:32): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828421.468:32): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828421.468:32): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828421.468:32): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8249 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:01 2025
+type=PROCTITLE msg=audit(1743828421.472:33): proctitle=2F7573722F7362696E2F756E69785F63686B70776400726F6F740063686B657870697279
+type=PATH msg=audit(1743828421.472:33): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828421.472:33): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828421.472:33): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f98435f4d55 a2=80000 a3=0 items=1 ppid=8249 pid=8250 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=(none) ses=4294967295 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:01 2025
+type=PROCTITLE msg=audit(1743828421.472:36): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828421.472:36): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828421.472:36): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828421.472:36): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8249 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:01 2025
+type=PROCTITLE msg=audit(1743828421.472:38): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828421.472:38): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828421.472:38): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828421.472:38): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8249 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=16 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:01 2025
+type=PROCTITLE msg=audit(1743828421.472:39): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828421.472:39): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828421.472:39): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828421.472:39): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8249 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=16 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:01 2025
+type=PROCTITLE msg=audit(1743828421.472:40): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828421.472:40): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828421.472:40): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828421.472:40): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8249 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=16 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:01 2025
+type=PROCTITLE msg=audit(1743828421.476:41): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828421.476:41): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828421.476:41): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828421.476:41): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8249 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=16 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.832:46): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.832:46): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.832:46): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.832:46): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.836:47): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.836:47): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.836:47): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.836:47): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.836:48): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.836:48): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.836:48): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.836:48): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.844:49): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.844:49): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.844:49): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.844:49): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.848:50): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743828449.848:50): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.848:50): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.848:50): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7ff39bf1cd55 a2=80000 a3=0 items=1 ppid=8283 pid=8284 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.848:52): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.848:52): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.848:52): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.848:52): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.848:54): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.848:54): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.848:54): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.848:54): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.848:56): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.848:56): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.848:56): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.848:56): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.848:57): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.848:57): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.848:57): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.848:57): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.848:58): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.848:58): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.848:58): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.848:58): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.848:59): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.848:59): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.848:59): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828449.848:59): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f30d359cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8283 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:17:29 2025
+type=PROCTITLE msg=audit(1743828449.852:61): proctitle=617564697463746C002D6100616C776179732C65786974002D460070617468002F6574632F706173737764002D46007065726D007761002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828449.852:61): item=0 name="/etc/" inode=8912897 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828449.852:61): cwd="/home/prakashraj"
+type=SOCKADDR msg=audit(1743828449.852:61): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743828449.852:61): arch=c000003e syscall=44 success=yes exit=1084 a0=4 a1=7fff0aae36a0 a2=43c a3=0 items=1 ppid=8285 pid=8286 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743828449.852:61): auid=1000 ses=3 subj=unconfined op=add_rule key="passwd_monitor" list=4 res=1
+----
+time->Sat Apr  5 10:22:18 2025
+type=PROCTITLE msg=audit(1743828738.883:64): proctitle="(fwupdmgr)"
+type=PATH msg=audit(1743828738.883:64): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828738.883:64): cwd="/"
+type=SYSCALL msg=audit(1743828738.883:64): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f40fc9b4d55 a2=80000 a3=0 items=1 ppid=1 pid=8462 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="(fwupdmgr)" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.759:67): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.759:67): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.759:67): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.759:67): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.759:68): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.759:68): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.759:68): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.759:68): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.759:69): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.759:69): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.759:69): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.759:69): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.767:70): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.767:70): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.767:70): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.767:70): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.771:71): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743828779.771:71): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.771:71): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.771:71): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f26b2884d55 a2=80000 a3=0 items=1 ppid=8523 pid=8524 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.771:73): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.771:73): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.771:73): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.771:73): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.771:75): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.771:75): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.771:75): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.771:75): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.775:77): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.775:77): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.775:77): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.775:77): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.775:78): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.775:78): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.775:78): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.775:78): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.775:79): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.775:79): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.775:79): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.775:79): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:22:59 2025
+type=PROCTITLE msg=audit(1743828779.775:80): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828779.775:80): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828779.775:80): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828779.775:80): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fc1f6bd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8523 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:00 2025
+type=PROCTITLE msg=audit(1743828780.075:84): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828780.075:84): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828780.075:84): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828780.075:84): arch=c000003e syscall=21 success=yes exit=0 a0=55c045b91488 a1=0 a2=4 a3=0 items=1 ppid=3166 pid=8530 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-miner-f" exe="/usr/libexec/tracker-miner-fs-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:00 2025
+type=PROCTITLE msg=audit(1743828780.075:85): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828780.075:85): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828780.075:85): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828780.075:85): arch=c000003e syscall=257 success=yes exit=46 a0=ffffff9c a1=55c045b91488 a2=280000 a3=0 items=1 ppid=3166 pid=8530 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-miner-f" exe="/usr/libexec/tracker-miner-fs-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:00 2025
+type=PROCTITLE msg=audit(1743828780.203:86): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828780.203:86): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828780.203:86): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828780.203:86): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7fc78578cd55 a2=80000 a3=0 items=1 ppid=3166 pid=8530 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-extract" exe="/usr/libexec/tracker-extract-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.576:87): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.576:87): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.576:87): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.576:87): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.580:88): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.580:88): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.580:88): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.580:88): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.580:89): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.580:89): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.580:89): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.580:89): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.584:90): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.584:90): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.584:90): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.584:90): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.588:91): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743828830.588:91): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.588:91): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.588:91): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f130e1f4d55 a2=80000 a3=0 items=1 ppid=8590 pid=8591 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.588:93): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.588:93): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.588:93): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.588:93): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.588:95): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.588:95): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.588:95): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.588:95): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.588:97): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.588:97): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.588:97): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.588:97): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.588:98): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.588:98): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.588:98): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.588:98): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.588:99): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.588:99): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.588:99): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.588:99): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:50 2025
+type=PROCTITLE msg=audit(1743828830.588:100): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D3634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828830.588:100): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828830.588:100): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828830.588:100): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fae99194d55 a2=80000 a3=0 items=1 ppid=6573 pid=8590 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:51 2025
+type=PROCTITLE msg=audit(1743828831.016:104): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828831.016:104): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828831.016:104): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828831.016:104): arch=c000003e syscall=21 success=yes exit=0 a0=55c045b91488 a1=0 a2=4 a3=0 items=1 ppid=3166 pid=8597 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-miner-f" exe="/usr/libexec/tracker-miner-fs-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:51 2025
+type=PROCTITLE msg=audit(1743828831.016:105): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828831.016:105): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828831.016:105): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828831.016:105): arch=c000003e syscall=257 success=yes exit=46 a0=ffffff9c a1=55c045b91488 a2=280000 a3=0 items=1 ppid=3166 pid=8597 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-miner-f" exe="/usr/libexec/tracker-miner-fs-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:23:51 2025
+type=PROCTITLE msg=audit(1743828831.144:106): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828831.144:106): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828831.144:106): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828831.144:106): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7f2886224d55 a2=80000 a3=0 items=1 ppid=3166 pid=8597 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-extract" exe="/usr/libexec/tracker-extract-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:25:01 2025
+type=PROCTITLE msg=audit(1743828901.640:107): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828901.640:107): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828901.640:107): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828901.640:107): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8615 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:25:01 2025
+type=PROCTITLE msg=audit(1743828901.640:108): proctitle=2F7573722F7362696E2F756E69785F63686B70776400726F6F740063686B657870697279
+type=PATH msg=audit(1743828901.640:108): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828901.640:108): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828901.640:108): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f1e0a3acd55 a2=80000 a3=0 items=1 ppid=8615 pid=8616 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=(none) ses=4294967295 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:25:01 2025
+type=PROCTITLE msg=audit(1743828901.644:111): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828901.644:111): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828901.644:111): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828901.644:111): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8615 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:25:01 2025
+type=PROCTITLE msg=audit(1743828901.644:113): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828901.644:113): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828901.644:113): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828901.644:113): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8615 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=17 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:25:01 2025
+type=PROCTITLE msg=audit(1743828901.644:114): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828901.644:114): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828901.644:114): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828901.644:114): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8615 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=17 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:25:01 2025
+type=PROCTITLE msg=audit(1743828901.644:115): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828901.644:115): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828901.644:115): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828901.644:115): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8615 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=17 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:25:01 2025
+type=PROCTITLE msg=audit(1743828901.644:116): proctitle=2F7573722F7362696E2F43524F4E002D66
+type=PATH msg=audit(1743828901.644:116): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828901.644:116): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1743828901.644:116): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=7f21ba79cd55 a2=80000 a3=0 items=1 ppid=1061 pid=8615 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=17 comm="cron" exe="/usr/sbin/cron" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.276:121): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.276:121): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.276:121): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.276:121): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.280:122): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.280:122): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.280:122): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.280:122): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.280:123): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.280:123): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.280:123): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.280:123): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.288:124): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.288:124): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.288:124): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.288:124): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.292:125): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743828970.292:125): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.292:125): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.292:125): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f2190ddcd55 a2=80000 a3=0 items=1 ppid=8677 pid=8678 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.292:127): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.292:127): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.292:127): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.292:127): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.292:129): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.292:129): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.292:129): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.292:129): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.296:131): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.296:131): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.296:131): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.296:131): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.296:132): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.296:132): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.296:132): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.296:132): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.296:133): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.296:133): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.296:133): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.296:133): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.296:134): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D460061756964002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743828970.296:134): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.296:134): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.296:134): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f112ed84d55 a2=80000 a3=0 items=1 ppid=6573 pid=8677 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.556:138): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828970.556:138): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.556:138): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.556:138): arch=c000003e syscall=21 success=yes exit=0 a0=55c045b91488 a1=0 a2=4 a3=0 items=1 ppid=3166 pid=8684 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-miner-f" exe="/usr/libexec/tracker-miner-fs-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.556:139): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828970.556:139): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.556:139): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.556:139): arch=c000003e syscall=257 success=yes exit=44 a0=ffffff9c a1=55c045b91488 a2=280000 a3=0 items=1 ppid=3166 pid=8684 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-miner-f" exe="/usr/libexec/tracker-miner-fs-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:26:10 2025
+type=PROCTITLE msg=audit(1743828970.684:140): proctitle="/usr/libexec/tracker-miner-fs-3"
+type=PATH msg=audit(1743828970.684:140): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743828970.684:140): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743828970.684:140): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7f543d024d55 a2=80000 a3=0 items=1 ppid=3166 pid=8684 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="tracker-extract" exe="/usr/libexec/tracker-extract-3" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.385:141): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.385:141): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.385:141): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.385:141): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.385:142): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.385:142): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.385:142): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.385:142): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.385:143): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.385:143): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.385:143): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.385:143): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.389:144): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.389:144): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.389:144): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.389:144): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.397:145): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743829060.397:145): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.397:145): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.397:145): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f282b8bcd55 a2=80000 a3=0 items=1 ppid=8711 pid=8712 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.397:147): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.397:147): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.397:147): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.397:147): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.397:149): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.397:149): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.397:149): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.397:149): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.397:151): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.397:151): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.397:151): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.397:151): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.397:152): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.397:152): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.397:152): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.397:152): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.397:153): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.397:153): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.397:153): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.397:153): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:40 2025
+type=PROCTITLE msg=audit(1743829060.397:154): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4620617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829060.397:154): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829060.397:154): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829060.397:154): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fa03293cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8711 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.773:158): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.773:158): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.773:158): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.773:158): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.777:159): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.777:159): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.777:159): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.777:159): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.777:160): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.777:160): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.777:160): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.777:160): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.785:161): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.785:161): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.785:161): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.785:161): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.785:162): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743829070.785:162): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.785:162): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.785:162): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f6a107fcd55 a2=80000 a3=0 items=1 ppid=8720 pid=8721 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.785:164): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.785:164): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.785:164): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.785:164): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.789:166): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.789:166): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.789:166): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.789:166): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.789:168): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.789:168): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.789:168): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.789:168): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.789:169): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.789:169): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.789:169): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.789:169): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.789:170): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.789:170): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.789:170): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.789:170): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.789:171): proctitle=7375646F00617564697463746C002D6100616C776179732C65786974002D4600617263683D623634002D4600706174683D2F6574632F706173737764002D46007065726D3D7761002D4600617569643E3D31303030002D460061756964213D34323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.789:171): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.789:171): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829070.789:171): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fed98ef4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8720 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:27:50 2025
+type=PROCTITLE msg=audit(1743829070.793:173): proctitle=617564697463746C002D6100616C776179732C65786974002D46006172636800623634002D460070617468002F6574632F706173737764002D46007065726D007761002D460061756964000031303030002D460061756964000034323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829070.793:173): item=0 name="/etc/" inode=8912897 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829070.793:173): cwd="/home/prakashraj"
+type=SOCKADDR msg=audit(1743829070.793:173): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743829070.793:173): arch=c000003e syscall=44 success=yes exit=1084 a0=4 a1=7ffe5227a3b0 a2=43c a3=0 items=1 ppid=8722 pid=8723 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743829070.793:173): auid=1000 ses=3 subj=unconfined op=add_rule key="passwd_monitor" list=4 res=1
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.790:176): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.790:176): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.790:176): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.790:176): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.790:177): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.790:177): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.790:177): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.790:177): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.790:178): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.790:178): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.790:178): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.790:178): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.798:179): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.798:179): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.798:179): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.798:179): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.798:180): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743829250.798:180): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.798:180): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.798:180): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7fc311bfcd55 a2=80000 a3=0 items=1 ppid=8765 pid=8766 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.802:182): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.802:182): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.802:182): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.802:182): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.802:184): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.802:184): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.802:184): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.802:184): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.802:186): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.802:186): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.802:186): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.802:186): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.802:187): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.802:187): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.802:187): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.802:187): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.802:188): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.802:188): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.802:188): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.802:188): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:50 2025
+type=PROCTITLE msg=audit(1743829250.802:189): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829250.802:189): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829250.802:189): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829250.802:189): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fa8a7afcd55 a2=80000 a3=0 items=1 ppid=6573 pid=8765 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.002:191): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.002:191): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.002:191): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.002:191): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f276af1cd55 a2=80000 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.022:192): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.022:192): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.022:192): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.022:192): arch=c000003e syscall=262 success=yes exit=0 a0=ffffff9c a1=555aeac163f0 a2=7ffc4ea5bf30 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.022:193): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.022:193): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.022:193): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.022:193): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f276af1cd55 a2=80000 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.022:194): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.022:194): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.022:194): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.022:194): arch=c000003e syscall=89 success=no exit=-22 a0=7ffc4ea5b110 a1=7ffc4ea5b930 a2=3ff a3=555aeac1649a items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.022:195): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.022:195): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.022:195): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.022:195): arch=c000003e syscall=262 success=yes exit=0 a0=ffffff9c a1=555aeac164b0 a2=7ffc4ea5bd80 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.022:196): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.022:196): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.022:196): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.022:196): arch=c000003e syscall=262 success=yes exit=0 a0=ffffff9c a1=555aeac164b0 a2=7ffc4ea5be50 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.022:197): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.022:197): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.022:197): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.022:197): arch=c000003e syscall=262 success=yes exit=0 a0=ffffff9c a1=555aeac164b0 a2=7ffc4ea5be50 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.022:198): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.022:198): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.022:198): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.022:198): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=555aeac164b0 a2=0 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.026:199): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.026:199): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.026:199): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.026:199): arch=c000003e syscall=21 success=yes exit=0 a0=555aeac163f0 a1=2 a2=3 a3=7 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.026:200): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.026:200): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.026:200): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.026:200): arch=c000003e syscall=262 success=yes exit=0 a0=ffffff9c a1=555aeac163f0 a2=555aeac02140 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.026:201): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.026:201): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.026:201): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.026:201): arch=c000003e syscall=89 success=no exit=-22 a0=7ffc4ea5b1c0 a1=7ffc4ea5b9e0 a2=3ff a3=555aeac16c9a items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:30:51 2025
+type=PROCTITLE msg=audit(1743829251.026:202): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1743829251.026:202): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829251.026:202): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829251.026:202): arch=c000003e syscall=262 success=yes exit=0 a0=ffffff9c a1=555aeac16470 a2=7ffc4ea5be30 a3=0 items=1 ppid=8767 pid=8768 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.315:205): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.315:205): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.315:205): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.315:205): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.315:206): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.315:206): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.315:206): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.315:206): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.315:207): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.315:207): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.315:207): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.315:207): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.323:208): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.323:208): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.323:208): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.323:208): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.323:209): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743829283.323:209): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.323:209): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.323:209): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f55a812cd55 a2=80000 a3=0 items=1 ppid=8840 pid=8841 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.327:211): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.327:211): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.327:211): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.327:211): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.327:213): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.327:213): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.327:213): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.327:213): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.327:215): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.327:215): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.327:215): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.327:215): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.327:216): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.327:216): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.327:216): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.327:216): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.327:217): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.327:217): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.327:217): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.327:217): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:31:23 2025
+type=PROCTITLE msg=audit(1743829283.327:218): proctitle=7375646F006175736561726368002D6B007061737377645F6D6F6E69746F72
+type=PATH msg=audit(1743829283.327:218): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829283.327:218): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829283.327:218): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7f01d2cd4d55 a2=80000 a3=0 items=1 ppid=6573 pid=8840 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.908:222): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.908:222): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.908:222): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.908:222): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.908:223): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.908:223): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.908:223): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.908:223): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.908:224): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.908:224): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.908:224): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.908:224): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.912:225): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.912:225): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.912:225): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.912:225): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.916:226): proctitle=2F7573722F7362696E2F756E69785F63686B707764007072616B61736872616A0063686B657870697279
+type=PATH msg=audit(1743829402.916:226): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.916:226): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.916:226): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7f3e91184d55 a2=80000 a3=0 items=1 ppid=8902 pid=8903 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=pts0 ses=3 comm="unix_chkpwd" exe="/usr/sbin/unix_chkpwd" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.916:228): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.916:228): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.916:228): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.916:228): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.916:230): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.916:230): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.916:230): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.916:230): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.916:232): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.916:232): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.916:232): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.916:232): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.920:233): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.920:233): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.920:233): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.920:233): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.920:234): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.920:234): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.920:234): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.920:234): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.920:235): proctitle=7375646F00617564697463746C002D44
+type=PATH msg=audit(1743829402.920:235): item=0 name="/etc/passwd" inode=8916457 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1743829402.920:235): cwd="/home/prakashraj"
+type=SYSCALL msg=audit(1743829402.920:235): arch=c000003e syscall=257 success=yes exit=13 a0=ffffff9c a1=7fc7e417cd55 a2=80000 a3=0 items=1 ppid=6573 pid=8902 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="passwd_monitor"
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.924:238): proctitle=617564697463746C002D44
+type=SOCKADDR msg=audit(1743829402.924:238): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743829402.924:238): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7fff4106b920 a2=43c a3=0 items=0 ppid=8904 pid=8905 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743829402.924:238): auid=1000 ses=3 subj=unconfined op=remove_rule key="passwd_monitor" list=4 res=1
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.924:239): proctitle=617564697463746C002D44
+type=SOCKADDR msg=audit(1743829402.924:239): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743829402.924:239): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7fff4106b920 a2=43c a3=0 items=0 ppid=8904 pid=8905 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743829402.924:239): auid=1000 ses=3 subj=unconfined op=remove_rule key="passwd_monitor" list=4 res=1
+----
+time->Sat Apr  5 10:33:22 2025
+type=PROCTITLE msg=audit(1743829402.924:240): proctitle=617564697463746C002D44
+type=SOCKADDR msg=audit(1743829402.924:240): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1743829402.924:240): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7fff4106b920 a2=43c a3=0 items=0 ppid=8904 pid=8905 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743829402.924:240): auid=1000 ses=3 subj=unconfined op=remove_rule key="passwd_monitor" list=4 res=1
+----
+time->Sat Apr  5 10:37:03 2025
+type=PROCTITLE msg=audit(1743829623.166:280): proctitle=617564697463746C002D6100616C776179732C65786974002D46006172636800623634002D460070617468002F6574632F706173737764002D46007065726D007761002D460061756964000031303030002D460061756964000034323934393637323935002D46006B65793D7061737377645F6D6F6E69746F72
+type=SYSCALL msg=audit(1743829623.166:280): arch=c000003e syscall=44 success=yes exit=1084 a0=4 a1=7ffd893bd1b0 a2=43c a3=0 items=0 ppid=9147 pid=9148 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1743829623.166:280): auid=1000 ses=3 subj=unconfined op=add_rule key="passwd_monitor" list=4 res=1

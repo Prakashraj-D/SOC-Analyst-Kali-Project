@@ -1,0 +1,155 @@
+Report Generated on: Sat Apr  5 11:49:58 IST 2025
+==== Phase 5: Automated Daily Security Report ====
+ 
+ ################### Logwatch 7.12 (01/22/25) #################### 
+        Processing Initiated: Sat Apr  5 11:49:39 2025
+        Date Range Processed: today
+                              ( 2025-Apr-05 )
+                              Period is day.
+        Detail Level of Output: 10
+        Type of Output/Format: stdout / text
+        Logfiles for Host: kali
+ ################################################################## 
+ 
+ --------------------- System Configuration Begin ------------------------ 
+
+    Machine: x86_64
+    Release: Linux 6.12.13-amd64
+ 
+    CPU Model(s):
+       CPU Model: AMD PRO A4-4350B R4, 5 COMPUTE CORES 2C+3G: 2 processors
+ 
+    MemTotal:        3853412 kB (3.67 GB)
+    MemFree:          270428 kB (0.26 GB)
+    SwapTotal:        999420 kB (0.95 GB)
+    SwapFree:         757340 kB (0.72 GB)
+ 
+ ---------------------- System Configuration End ------------------------- 
+
+ 
+ --------------------- dpkg status changes Begin ------------------------ 
+
+ 
+ Installed:
+    auditd:amd64 1:4.0.2-2+b2
+    gsasl-common:all 2.2.1-2
+    guile-3.0-libs:amd64 3.0.10+really3.0.10-4
+    libauparse0t64:amd64 1:4.0.2-2+b2
+    libgsasl18:amd64 2.2.1-2
+    libgssglue1:amd64 0.9-1+b1
+    libmailutils9t64:amd64 1:3.19-1
+    libntlm0:amd64 1.8-4
+    logwatch:all 7.12-3
+    mailutils-common:all 1:3.19-1
+    mailutils:amd64 1:3.19-1
+ 
+ ---------------------- dpkg status changes End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/sda2       456G   26G  407G   6% /
+ efivarfs         84K   55K   25K  70% /sys/firmware/efi/efivars
+ /dev/sda1       511M  152K  511M   1% /boot/efi
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ --------------------- Network Report Begin ------------------------ 
+
+ 
+ 
+ ------------- Network statistics ---------------
+ 
+ 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+     inet 127.0.0.1/8 scope host lo
+        valid_lft forever preferred_lft forever
+     inet6 ::1/128 scope host noprefixroute 
+        valid_lft forever preferred_lft forever
+     RX:  bytes packets errors dropped  missed   mcast           
+           145k   2.77k      0       0       0       0 
+     TX:  bytes packets errors dropped carrier collsns           
+           145k   2.77k      0       0       0       0 
+ 2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+     link/ether 9c:5a:44:45:35:1a brd ff:ff:ff:ff:ff:ff
+     RX:  bytes packets errors dropped  missed   mcast           
+              0       0      0       0       0       0 
+     TX:  bytes packets errors dropped carrier collsns           
+              0       0      0       0       0       0 
+ 3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+     link/ether 3c:91:80:5e:e1:63 brd ff:ff:ff:ff:ff:ff
+     inet 192.168.237.239/24 brd 192.168.237.255 scope global dynamic noprefixroute wlan0
+        valid_lft 2644sec preferred_lft 2644sec
+     inet6 2401:4900:67b7:1480:7353:a1ee:6dc0:fec1/64 scope global dynamic noprefixroute 
+        valid_lft 7051sec preferred_lft 7051sec
+     inet6 fe80::e34:d1da:cd0e:16d9/64 scope link noprefixroute 
+        valid_lft forever preferred_lft forever
+     RX:  bytes packets errors dropped  missed   mcast           
+           143M    134k      0       0       0       0 
+     TX:  bytes packets errors dropped carrier collsns           
+          19.2M   52.0k      0       0       0       0 
+ 
+ 
+ ------------- Network statistics ---------------
+ 
+ 
+ 
+ 
+ ------------- Listening sockets ---------------
+ 
+ Active Internet connections (only servers)
+ Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+ tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1265/sshd: /usr/sbi 
+ tcp6       0      0 :::22                   :::*                    LISTEN      1265/sshd: /usr/sbi 
+ udp        0      0 0.0.0.0:34280           0.0.0.0:*                           5426/python3        
+ udp        0      0 192.168.237.239:3702    0.0.0.0:*                           5426/python3        
+ udp        0      0 239.255.255.250:3702    0.0.0.0:*                           5426/python3        
+ udp6       0      0 fe80::e34:d1da:cd0:3702 :::*                                5426/python3        
+ udp6       0      0 ff02::c:3702            :::*                                5426/python3        
+ udp6       0      0 :::40756                :::*                                5426/python3        
+ 
+ 
+ ------------- Listening sockets ---------------
+ 
+ 
+ 
+ 
+ ------------- Routing states ---------------
+ 
+ /proc/sys/net/ipv4/ip_forward set to 0
+ 
+ 
+ ------------- Routing states ---------------
+ 
+ 
+ 
+ 
+ ------------- Routing capabilities----------
+ 
+ 
+ 
+ ------------- Routing capabilities----------
+ 
+ 
+ 
+ 
+ ------------- Network routes ---------------
+ 
+ Kernel IP routing table
+ Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+ 0.0.0.0         192.168.237.14  0.0.0.0         UG        0 0          0 wlan0
+ 192.168.237.0   0.0.0.0         255.255.255.0   U         0 0          0 wlan0
+ 
+ 
+ ------------- Network routes ---------------
+ 
+ 
+ 
+ ---------------------- Network Report End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
